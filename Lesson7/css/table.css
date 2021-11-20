@@ -18,8 +18,8 @@
     border-bottom: 1px solid #dddddd;
 }
 
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+.styled-table tbody tr:nth-child(even) {
+    background-color: #c0e0d7;
 }
 
 .styled-table tbody tr:last-of-type {
@@ -35,5 +35,5 @@
 .styled-table tbody tr:hover {
     font-weight: bold;
     color: #116466;
-    background: #c0e0d7;
+    background: #95c2b5;
 }
