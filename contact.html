@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+<head>
+    <title>Напиши мне</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="text/html, width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <meta name="description" content="Вася Пупкин, Василий Пупкин, Pupkin, кто такой Пупкин" />
+    <meta name="Keywords" content="Вася Пупкин, Василий Пупкин, Pupkin, кто такой Пупкин" />
+    <meta name="searchtitle" content="Вася Пупкин, Василий Пупкин, Pupkin, кто такой Пупкин" />
+    
+</head>
+<body class="body_color">
+    <nav>
+        <a href="index.html">Достижения Васи Пупкина</a> |
+        <a href="about.html">О Васе Пупкине</a> |
+        <span class="isDisabled"><a href="contact.html">Контакты</a></span>
+    </nav>
+    <hr>
+    <h2>Связаться с Васей Пупкиным</h2>
+    <tr>
+    <form action="">
+        <label for="surname">Ваша фамилия:</label><br>
+        <input type="text" id="surname" name="surname"><br><br>
+        <label for="firstname">Ваше имя:</label><br>
+        <input type="text" id="firstname" name="firstname"><br><br>
+        <label for="email">Ваш E-mail:</label><br>
+        <input type="email" id="user_email" name="user_email"><br><br>
+        <label for="theme_subject">Тема сообщения:</label><br>
+        <select name="theme_subject" id="theme_subject">
+            <option value="theme1">Привезем</option>
+            <option value="theme2">Авто</option>
+            <option value="theme3">Из</option>
+            <option value="theme4">США</option>
+        </select><br><br>
+        <label for="content">Сообщение:</label><br>
+        <textarea rows="6" cols="50" id="content" name="content" ></textarea><br>
+        <input type="checkbox" name="send_email" id="send_email"><label for="send_email">Получить ответ по E-mail</label><br><br>
+        <input type="submit" value="Отправить сообщение"><input type="reset" value="Очистить форму">
+</form>
+
+<footer align="center" class="footer">
+    <br><hr>
+    &#169; 2021 Vasiliy Pupkin
+    
+</footer>
+</body>
+</html>
