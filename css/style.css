@@ -1,0 +1,29 @@
+body {
+    background-color: aquamarine;
+}
+
+table {
+    text-align: center;
+    font-size: 30px;
+}
+
+td {
+    border-style: ridge;
+    border-color: black;
+}
+
+footer {
+    text-align: center;
+}
+
+tr {
+    background-color: blue;
+}
+
+.tr-1 {
+    background-color: skyblue;
+}
+
+.tr-2 {
+    background-color: powderblue;
+}
