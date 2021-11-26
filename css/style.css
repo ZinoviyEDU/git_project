@@ -14,10 +14,13 @@ td {
 
 footer {
     text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 tr {
     background-color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .tr-1 {
@@ -30,4 +33,17 @@ tr {
 
 nav {
     text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+img {
+    margin-left: 20px;
+}
+
+hr {
+    border-color: black;
 }
