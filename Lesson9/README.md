@@ -39,7 +39,7 @@ Average weight: XX kg
 
 ####4. Вывести количество космонавтов, находящихся в настоящий момент на орбите
 
-Получить информацию о космонавтах можно [тут](http://api.open-notify.org/astros.json)
+Получить информацию о космонавтах можно [тут](http://api.open-notify.org/astros.json)  
 Для получения данных можно воспользоваться библиотекой [requests](https://pypi.org/project/requests/)
 
 `PATH: /space/`
