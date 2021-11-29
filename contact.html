@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="description" content="Форма обратной связи для написания отзыва">
+    <meta name="keywords" content="Salvador Dali, Dali, Сальвадор Дали, Дали, сюрреализм, Каталогия, Жирона">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Сальвадор Дали</title>
 </head>
 <body>
+<nav>
+      <a href="index.html">Главная - Сальвадор Дали</a> |
+      <a href="about.html">Про Сальвадора</a> |
+      <a class="active" href="contact.html">Написать отзыв</a>
+</nav>
+<hr/>
+<h3>Написать отзыв</h3>
+<form>
+    <label for="fname">Имя:</label><br>
+    <input type="text" id="fname" name="fname"><br>
 
+    <label for="lname">Фамилия:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+
+    <label for="email">Адрес электронной почты:</label><br>
+    <input type="text" id="email" name="email"><br>
+
+    <label for="options">Тема отзыва</label>
+    <select id="options" name="options">
+        <option value="value1">Творчество</option>
+        <option value="value2">Биография</option>
+        <option value="value3">Фильмография</option>
+        <option value="value4">Прочее</option>
+    </select><br>
+
+    <textarea placeholder="Напишите Ваш отзыв" name="message" rows="6" cols="50"></textarea><br>
+
+    <input type="checkbox" id="answer" name="answer">
+    <label for="answer"> Получить ответ по электронной почте</label><br>
+
+    <input type="submit" value="Отправить сообщение">
+    <input type="reset" value="Очистить форму">
+
+</form>
+
+
+    <hr>
 </body>
+<footer>
+    <p>Сальвадор Дали, 1904-1989 &copy;</p>
+</footer>
 </html>
