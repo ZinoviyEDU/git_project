@@ -1,0 +1,20 @@
+.second h1,
+.second p {
+    display: block;
+    vertical-align: top;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.second h1 {
+    color: #6e6662;
+    font-size: 22px;
+    padding-top: 20px;
+    margin: 0px;
+}
+
+.second p {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
