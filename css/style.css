@@ -19,7 +19,6 @@ a:link {
 a:visited {
   color: #3B5998;
 }
-
 a:hover {
   text-decoration: underline;
   color: #FFFFFF;
@@ -35,7 +34,6 @@ a: hover:not(.active) {
   color: #FFFFFF;
   text-decoration: underline;
 }
-
 
 body {
   background-color: #3B5998;
@@ -57,20 +55,17 @@ p {
   font-size: 20px;
   text-align: left;
   color: #FFFFFF;
-  }
-
+}
 
 table, td, th {
   border: 1px solid black;
 }
-
 table {
   border-collapse: collapse;
   width: 100%;
   background-color: #8B9DC3;
   color: #3B5998;
 }
-
 th {
   height: 70px;
   background-color: #DFE3EE;
@@ -78,13 +73,6 @@ th {
 td {height: 45px;
     color: #FFFFFF;
     background-color: DFE3EE;}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-}
 
 input[type=text], input[type=password], input[type=email], #subject, #textarea {
   width: 100%;
@@ -110,16 +98,24 @@ input[type=submit]:hover {
 input[type=reset]:hover {
   background-color: #8B9DC3;
 }
+
 .container {
   border-radius: 5px;
   background-color: #DFE3EE;
   padding: 20px;
 }
+
+.container1 {
+  border-radius: 5px;
+  background-color: #8B9DC3;
+  padding: 20px;
+}
+
 footer {
   text-align: center;
   padding: 3px;
   font-family: verdana;
   background-color: #3B5998n;
-  color: #FFFFFF;
+  color: #3B5998;
   font-size: 15px
 }
