@@ -1,0 +1,125 @@
+.nav {
+  background-color: #DFE3EE;
+  list-style-type: none;
+  text-align: center;
+  color: #3B5998;
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+a:link {
+  text-decoration: none;
+  font-family: verdana;
+  color: #3B5998;
+}
+a:visited {
+  color: #3B5998;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+a:active {
+  text-decoration: underline;
+}
+a: hover:not(.active) {
+  color: #ADD8E6;
+}
+.active {
+  background-color: #8B9DC3;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+
+body {
+  background-color: #3B5998;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: verdana;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.skills {font-family: verdana;
+  font-size: 20px;
+  text-align: left;
+  color: #FFFFFF;
+  }
+
+
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #8B9DC3;
+  color: #3B5998;
+}
+
+th {
+  height: 70px;
+  background-color: #DFE3EE;
+}
+td {height: 45px;
+    color: #FFFFFF;
+    background-color: DFE3EE;}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+input[type=text], input[type=password], input[type=email], #subject, #textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #F7F7F7;
+  font-family: verdana;
+}
+input[type=submit], input[type=reset]  {
+  background-color: #3B5998;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #8B9DC3;
+}
+input[type=reset]:hover {
+  background-color: #8B9DC3;
+}
+.container {
+  border-radius: 5px;
+  background-color: #DFE3EE;
+  padding: 20px;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  font-family: verdana;
+  background-color: #3B5998n;
+  color: #FFFFFF;
+  font-size: 15px
+}
