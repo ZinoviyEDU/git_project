@@ -1,0 +1,132 @@
+
+body {
+   width:1000px;
+   margin:0 auto;
+   background-color:#D4E6B3;
+}
+
+h1{
+    font-size: 35px;
+    color: red;
+    text-align: center;
+}
+
+#list{
+    position:relative;
+    top: 50px;
+    left: 70px;
+}
+
+span{
+    color:green;
+}
+
+div.vertical_line{
+    width: 270px;
+    text-align:center;
+    height: 100%;
+    float: left;
+    border-right: 2px solid black ;
+    border-radius: 2px;
+}
+
+div.vertical_line2{
+    width: 270px;
+    text-align:center;
+    height: 100%;
+    float: left;
+
+}
+
+table{
+  border: 3px solid purple;
+  text-align: center;
+  width:900px;
+}
+
+th{
+    height:70px;
+    background:#00BFFF;
+
+}
+
+tr.even{
+    background:#87CEEB;
+}
+
+tr.odd{
+    background:#ADD8E6;
+}
+
+td{
+    height:30px;
+    padding: 0px;
+
+}
+
+#table{
+  position:relative;
+  left: 3%;
+  top:150px;
+
+}
+
+#image{
+  position:relative;
+  left:380px;
+  top:130px;
+}
+
+#text{
+  position: relative;
+  top:150px;
+}
+
+#lastname{
+    width:400px;
+    position:relative;
+    float:top;
+    top:140px;
+}
+
+#firstname{
+    position:relative;
+    float:top;
+    top:140px;
+}
+
+#email{
+    position:relative;
+    float:top;
+    top:140px;
+}
+
+#theme{
+    position:relative;
+    float:top;
+    top:140px;
+}
+
+#message{
+    position:relative;
+    float:top;
+    top:140px;
+}
+
+#feedback{
+    position:relative;
+    float:top;
+    top:140px;
+}
+
+#submit{
+    position:relative;
+    float:top;
+    top:160px;
+}
+
+#footer{
+  position: absolute;
+  bottom: 10px;
+  left: 670px;
+}
