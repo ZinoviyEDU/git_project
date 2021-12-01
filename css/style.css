@@ -1,0 +1,13 @@
+        nav { text-align: center }
+        footer {text-align: center}
+        table{  border: 2px solid SlateBlue;
+                align: center;
+                width: 100%;
+                text-align: center;
+                border-collapse: collapse;
+                }
+        td{ width: 25%;}
+        th,td{padding: 10px 15px;}
+        th{background: DodgerBlue;}
+        tr:nth-child(2n) {background: #e8edff;}
+
