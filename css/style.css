@@ -1,4 +1,3 @@
-        body {background: LightBlue;}
         nav { text-align: center }
         footer {text-align: center}
         table{  border: 2px solid SlateBlue;
@@ -11,3 +10,4 @@
         th,td{padding: 10px 15px;}
         th{background: DodgerBlue;}
         tr:nth-child(2n) {background: #e8edff;}
+
