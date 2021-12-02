@@ -92,12 +92,11 @@ def space():
 def encoder():
     if request.method == 'GET':
         res = render_template('base58encode.html')
-        return res
     if request.method == 'POST':
         inp_string = request.form.get('encode_text')
         res_str = base58.b58encode(inp_string)
         res = render_template('base58encode.html', code_string=res_str)
-        return res
+    return res
 
 
 @app.route('/base58decode', methods=['post', 'get'])
