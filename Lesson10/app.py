@@ -2,10 +2,10 @@ from flask import Flask, request, render_template
 from werkzeug.exceptions import HTTPException
 import csv
 import json
-import os
+from dotenv import load_dotenv
 
+load_dotenv('.env')
 app = Flask(__name__)
-os.environ.get('.env')
 
 
 @app.route('/')
