@@ -4,49 +4,60 @@
     <meta charset="UTF-8">
     <meta name="description" content="Форма обратной связи для написания отзыва">
     <meta name="keywords" content="Salvador Dali, Dali, Сальвадор Дали, Дали, сюрреализм, Каталония, Жирона">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
     <title>Сальвадор Дали</title>
 </head>
 <body>
-<nav>
-      <a href="index.html">Главная - Сальвадор Дали</a> |
-      <a href="about.html">Про Сальвадора</a> |
-      <a class="active" href="contact.html">Написать отзыв</a>
-</nav>
+    <nav class="nav justify-content-center">
+      <a class="nav-link" href="index.html">Главная - Сальвадор Дали</a><br>
+      <a class="nav-link" href="about.html">Про Сальвадора</a><br>
+      <a class="nav-link disabled" href="contact.html">Написать отзыв</a>
+    </nav>
 <hr/>
-<h3>Написать отзыв</h3>
-<form>
-    <label for="fname">Имя:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-
-    <label for="lname">Фамилия:</label><br>
-    <input type="text" id="lname" name="lname"><br>
-
-    <label for="email">Адрес электронной почты:</label><br>
-    <input type="text" id="email" name="email"><br>
-
-    <label for="options">Тема отзыва</label>
-    <select id="options" name="options">
-        <option value="value1">Творчество</option>
-        <option value="value2">Биография</option>
-        <option value="value3">Фильмография</option>
-        <option value="value4">Прочее</option>
-    </select><br>
-
-    <textarea placeholder="Напишите Ваш отзыв" name="message" rows="6" cols="50"></textarea><br>
-
-    <input type="checkbox" id="answer" name="answer">
-    <label for="answer"> Получить ответ по электронной почте</label><br>
-
-    <input type="submit" value="Отправить сообщение">
-    <input type="reset" value="Очистить форму">
-
-</form>
-
+<h3 class="m-2 b-3">Написать отзыв</h3>
+    <form>
+        <div class="m-2 b-3">
+            <label for="fname">Имя:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+        </div>
+        <div class="m-2 b-3">
+            <label for="lname">Фамилия:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+        </div>
+        <div class="m-2 b-3">
+            <label for="email">Адрес электронной почты:</label><br>
+            <input type="email" id="email" name="email"><br>
+        </div>
+        <div class="m-2 b-3">
+            <label for="options">Тема отзыва</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="options">
+                <option selected>Творчество</option>
+                <option value="value1">Биография</option>
+                <option value="value2">Фильмография</option>
+                <option value="value3">Прочее</option>
+            </select><br>
+        </div>
+        <div class="m-2 b-3">
+            <textarea placeholder="Напишите Ваш отзыв" name="message" rows="6" cols="50"></textarea><br>
+        </div>
+        <div class="m-2 b-3">
+            <input type="checkbox" id="answer" name="answer">
+            <label for="answer"> Получить ответ по электронной почте</label><br>
+        </div>
+        <div class="m-2 b-3">
+            <input class="btn btn-success" type="submit" value="Отправить сообщение">
+            <input class="btn btn-secondary" type="reset" value="Очистить форму">
+        </div>
+    </form>
 
     <hr>
 </body>
 <footer>
-    <p>Сальвадор Дали, 1904-1989 &copy;</p>
+    <div class="text-center">
+        <p>Сальвадор Дали, 1904-1989 &copy;</p>
+    </div>
 </footer>
 </html>
