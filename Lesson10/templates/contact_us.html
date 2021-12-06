@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Связь с Василием Пупкиным
+Связь с Василием Пупкиным
 {% endblock title %}
 
 {% block header %}
-    Связь с Василием Пупкиным
+Связь с Василием Пупкиным
 {% endblock header %}
 
 {% block keywords %}
@@ -18,9 +18,6 @@
 
 {% block container %}
          <div class="col-6 form-group bg-group">
-             <div class="alert alert-success hide" id="success-alert">
-                <strong>Success!</strong> Indicates a successful or positive action.
-            </div>
             <form class="stacked" action="{{ url_for('contact_us') }}" method="post">
                 <div class="row">
                     <div class="form-group col-12">
@@ -72,12 +69,4 @@
                 </div>
             </form>
         </div>
-
-<script>
-  submit.onclick = function() {
-    var element = document.getElementById("success-alert");
-    element.classList.remove("hide");
-    element.classList.add("show");
-  };
-</script>
 {% endblock container %}

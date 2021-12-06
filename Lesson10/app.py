@@ -1,6 +1,7 @@
-from flask import Flask, request, render_template
+from flask import Flask
+from flask import request
+from flask import render_template
 from werkzeug.exceptions import HTTPException
-import csv
 import json
 from dotenv import load_dotenv
 
@@ -40,7 +41,7 @@ def contact_us():
         form_payload['response'] = request.form.get('response')
         form_payload['comment'] = request.form.get('comment')
         with open('data/form_data.txt', mode='a') as fh:
-            fh.write(json.dumps(form_payload)+'\n')
+            fh.write(json.dumps(form_payload) + '\n')
         res = render_template('contact_us.html')
     return res
 
@@ -53,4 +54,3 @@ def page_not_found(e):
     elif e.code == 500:
         res = render_template('500.html'), e.code
     return res
-
