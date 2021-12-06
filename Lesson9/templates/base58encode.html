@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat"
+          rel="stylesheet">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='css/reset.css') }}">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='css/main.css') }}">
+    <title>Кодер Base58</title>
+</head>
+<body>
+<div class="container">
+     <div class="row">
+        <div class="col-12 h-50">
+            <header class="header">Кодер Base58</header>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-3">
+            <nav class="nav flex-column">
+                <a class="nav-link active" href="/">Главная</a>
+                <a class="nav-link active" href="/requirements">Зависимости проекта</a>
+                <a class="nav-link active" href="/generate-users/15">Генератор пользователей</a>
+                <a class="nav-link active" href="/mean">Расчет среднего</a>
+                <a class="nav-link active" href="/space">Список космонавтов</a>
+                <a class="nav-link disabled" href="/base58encode">Кодер Base58</a>
+                <a class="nav-link active" href="/base58decode">Декодер Base58</a>
+            </nav>
+    </div>
+    <div class="col-6">
+        <form class="stacked" action="{{ url_for('encoder') }}" method="post" id="">
+                <div class="row">
+                <div class="form-group col-12">
+                        <input type="text" class="form-control-lg" required
+                               placeholder="Строка без пробелов" id="encode_text" name="encode_text"/>
+                </div>
+                <div class="form-group col-12">
+                        <button type="submit" class="btn btn-primary float-left">Кодировать
+                        </button>
+                        <button type="reset"
+                                class="btn btn-primary float-right">Очистить
+                        </button>
+                </div>
+                </div>
+            </form>
+        <div class="card ext-card">
+          <div class="card-body">
+
+                <pre>
+                {{ code_string }}
+                </pre>
+
+          </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>

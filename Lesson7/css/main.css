@@ -1,0 +1,108 @@
+/* Скелет страниц на flexbox */
+html,
+body {
+  height: 100%;
+  margin: 0px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+}
+
+.flexbox .main {
+  flex: 1;
+  position: relative;
+}
+
+.flexbox .header,
+.flexbox .footer {
+  padding: 1em;
+}
+
+.flexbox-row {
+  display: flex;
+  position:absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.flexbox-row .first,
+.flexbox-row .second {
+  padding: 1em;
+}
+
+.flexbox-row .second {
+  flex: 1;
+  display: block;
+  overflow: auto;
+  height: 100%;
+}
+
+/* Стилизация меню */
+.flexbox-row .first nav {
+    width: 100%;
+}
+
+.flexbox-row .first ul {
+    float: left;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+
+}
+
+.flexbox-row .first li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.flexbox-row .first li a:hover {
+    background-color: #c0e0d7;
+    color: black;
+}
+
+/* Стилизация отключенной ссылки меню */
+.isDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.isDisabled > a {
+  color: currentColor;
+  display: inline-block;  /* For IE11/ MS Edge bug */
+  pointer-events: none;
+  text-decoration: none;
+}
+
+/* Стилизация шапки и подвала */
+.header {
+    background-color: #116466;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    height: 8%;
+
+}
+
+.footer {
+    background-color: #116466;
+    text-align: center;
+    color:white;
+    padding: 10px;
+    position:relative;
+    line-height:16px;
+}
+
+/* Цвет фона при выделении текста на странице */
+::selection {
+  background: #c0e0d7;
+}

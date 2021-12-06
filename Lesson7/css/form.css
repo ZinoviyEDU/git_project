@@ -1,0 +1,199 @@
+/* Стилизация формы обратной связи */
+#form-main {
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgb(192,224,215);
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:20px;
+	padding-bottom:30px;
+	width: 650px;
+	float: left;
+	position: relative;
+    border-radius: 5px;
+}
+
+.montform .feedback-input {
+	color:#3c3c3c;
+	font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-weight:500;
+	font-size: 16px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+/* Стилизация форм ввода */
+.montform .feedback-input:focus {
+	background: #fff;
+	border: 3px solid #116466;
+	color: #116466;
+	outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+
+/* Иконки в формах ввода */
+.montform #name,
+.montform #firstname {
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-address-book.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform #name:focus,
+.montform #firstname:focus {
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-address-book.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+    background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #email {
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #email:focus {
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg);
+	background-size: 30px 30px;
+    background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+
+.montform  #message_type {
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-book.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #message_type:focus {
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-book.svg);
+	background-size: 30px 30px;
+    background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #comment {
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-pencil.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+/* Стилизация формы сообщения */
+.montform  textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize: none;
+}
+
+/* Стилизация чекбокса и подписи */
+.montform .response {
+    display: inline-block;
+    white-space: nowrap;
+    align: left;
+    vertical-align: left;
+    color:#3c3c3c;
+	font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-weight:500;
+	font-size: 16px;
+	border-radius: 0;
+	margin-bottom: 10px;
+	vertical-align: middle;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	width:100%;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+.montform #response {
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+    background-color: white;
+    border: solid 1px black;
+    position: relative;
+    text-align: left;
+    float: left;
+    width: 50px;
+}
+
+.montform #response:checked:before {
+    font-size: 22px;
+    background-color: white;
+    color: #116466;
+}
+
+.montform #response:checked:after {
+    font-size: 22px;
+    background-color: white;
+    color: #116466;
+}
+
+.montform .chkbox {
+    padding-left: 10px;
+    font-weight: bold;
+    float: left;
+}
+
+.montform  input:hover, .montform  textarea:hover,
+.montform  input:focus, .montform  textarea:focus {
+	background-color:#e6e6e6;
+}
+
+/* Стилизация кнопок */
+.button-green {
+	font-family: 'Montserrat', 'Open Sans', sans-serif;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #116466;
+	color:white;
+	font-size: 24px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+
+.button-green:hover {
+	background-color: rgba(0,0,0,0);
+	color: #116466;
+}
+
+.montform  .submit:hover {
+	color: #c0e0d7;
+}
+
+/* .ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	transition: .3s ease;
+}
+
+.submit:hover .ease {
+  width: 100%;
+  background-color: #c0e0d7;
+}
+ */

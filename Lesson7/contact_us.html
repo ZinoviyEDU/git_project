@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="связь, написать, сообщение, Василию Пупкину, отправить, обратная связь">
+    <meta name="description" content="Свяжитесь с Василием Пупкиным. Отсюда Вы можете написать ему и получить обратную связь">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Связь с Василием Пупкиным</title>
+</head>
+<body>
+<div class="flexbox">
+    <header class="header">Связь с Василием Пупкиным</header>
+  <div class="main">
+    <div class="flexbox-row">
+      <div class="first">
+          <nav>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="contact_us.html" class="isDisabled">Связь с Василием Пупкиным</a></li>
+              <li><a href="about.html">О Василии Пупкине</a></li>
+            </ul>
+        </nav>
+      </div>
+      <div class="second">
+          <div id="form-main">
+                <div id="form-div">
+                    <form class="montform" id="reused_form" >
+                        <p class="firstname">
+                            <input name="firstname" type="text" class="feedback-input" required placeholder="Фамилия" id="firstname" />
+                        </p>
+                        <p class="name">
+                            <input name="name" type="text" class="feedback-input" required placeholder="Имя" id="name" />
+                        </p>
+                        <p class="email">
+                            <input name="email" type="email" required class="feedback-input" id="email" placeholder="Email" />
+                        </p>
+                        <p class="message_type">
+                        <select id="message_type" name="message_type" class="feedback-input">
+                              <option value="" disabled selected>Выберите тип сообщения</option>
+                              <option value="message">Сообщение</option>
+                              <option value="proposal">Предложение</option>
+                              <option value="abuse">Жалоба</option>
+                              <option value="feedback">Обратная связь</option>
+                        </select>
+                        </p>
+                        <p class="response">
+                            <label for="response" class="chkbox">
+                            <input name="response" type="checkbox"  id="response">
+                            Получить ответ по email
+                            </label>
+                        </p>
+                        <p class="text">
+                            <textarea name="message" class="feedback-input" id="comment" placeholder="Сообщение"  cols="50" rows="6" maxlength="300" wrap="hard"></textarea>
+                        </p>
+                        <div class="submit">
+                            <button type="submit" class="button-green">Отправить</button>
+                            <button type="reset"  class="button-green" value="Reset">Очистить</button>
+                           <!-- <div class="ease"></div> -->
+                         </div>
+                    </form>
+                </div>
+            </div>
+       </div>
+    </div>
+  </div>
+  <footer class="footer">Все права принадлежат &#169; 2010-2021 Vasia Pupkin&#174;</footer>
+</div>
+</body>
+</html>
+
+
