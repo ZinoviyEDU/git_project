@@ -5,7 +5,7 @@ import requests
 import base58
 
 app = Flask(__name__)
-string = ''
+
 
 @app.route("/requirements")
 def requirements():
