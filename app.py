@@ -55,7 +55,6 @@ def astros_list():
 
 @app.route("/base58encode/<string_to_encode>")
 def encode_base58(string_to_encode):
-    global encoded_string
     encoded_string = base58.b58encode(string_to_encode)
     return f"<p>{encoded_string}</p>"
 
