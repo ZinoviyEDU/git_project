@@ -2,9 +2,10 @@ from flask import Flask
 from faker import Faker
 import pandas as pd
 import requests
+import base58
 
 app = Flask(__name__)
-
+string = ''
 
 @app.route("/requirements")
 def requirements():
@@ -50,6 +51,20 @@ def astros_list():
         astros += f"<p>Name: {i.get('name')}, craft : {i.get('craft')}</p>"
 
     return f"<p>{astros}</p>"
+
+
+@app.route("/base58encode/<string_to_encode>")
+def encode_base58(string_to_encode):
+    global encoded_string
+    encoded_string = base58.b58encode(string_to_encode)
+    return f"<p>{encoded_string}</p>"
+
+
+@app.route("/base58decode/<string_to_decode>")
+def decode_base58(string_to_decode):
+    string_to_decode = str(string_to_decode).replace('\'','').replace('b','')
+    decoded_string = base58.b58decode(string_to_decode)
+    return f"<p>{decoded_string}</p>"
 
 
 if __name__ == "__main__":
