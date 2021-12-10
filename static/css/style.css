@@ -1,0 +1,33 @@
+    .row.content {height: 100%}
+
+    .sidenav {
+      background-color: #f1f1f1;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    .active { background-color: #555;}
+
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+
+input[type=text], input[type=password], input[type=email], #subject, #textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #F7F7F7;
+}

@@ -1,0 +1,12 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li  class="{% if request.endpoint=='home' %}active{%endif %}">
+                <a class="navbar-brand" href={{url_for('home')}}>Home</a></li>
+            <li class="{% if request.endpoint=='about' %}active{%endif %}">
+                <a class="navbar-brand" href={{url_for('about')}}>About Max</a></li>
+            <li class="{% if request.endpoint=='contacts' %}active{%endif %}">
+                <a class="navbar-brand" href={{url_for('contacts')}}>Contacts</a></li>
+        </ul>
+    </div>
+</nav>

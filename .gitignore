@@ -14,10 +14,12 @@ instance/
 .webassets-cache
 
 # Environments
-venv/
+env1/
 
 # pyenv
 .python-version
 
 # ENV
 .env
+
+.DS_Store

@@ -1,0 +1,7 @@
+{% extends 'base.html'%}
+{% block title %} {{ text.title|upper }} {% endblock %}
+{% block content %}
+    <h1>{{text.heading}}</h1>
+    <p>{{text.message|upper}}</p>
+    <p>{{text.help}}</p>
+{% endblock %}
