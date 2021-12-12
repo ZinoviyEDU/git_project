@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Contact Stainless Steel Rat
+{% endblock title %}
+
+{% block header %}
+    Contact Stainless Steel Rat
+{% endblock header %}
+
+{% block keywords %}
+"contact, message, crime, stainless, steel, rat"
+{% endblock keywords %}
+
+{% block description %}
+"If you are planning a crime, don't hesitate to contact the Rat"
+{% endblock description %}
+
+{% block container %}
+         <div class="col-6 form-group bg-group">
+            <form class="stacked" action="{{ url_for('contact') }}" method="post">
+                <div class="row">
+                    <div class="form-group col-12">
+                        <input type="text" class="form-control-lg" required
+                               placeholder="Surname" id="lastname" name="lastname"/>
+                    </div>
+                    <div class="form-group col-12">
+                        <input type="text" class="form-control-lg" required
+                               placeholder="Name" id="firstname" name="firstname"/>
+                    </div>
+                    <div class="form-group col-12">
+                        <input type="email" class="form-control-lg" id="email" name="email"
+                               placeholder="name@example.com">
+                    </div>
+                    <div class="form-group col-12">
+                        <select id="message_type" name="message_type"
+                                class="form-control-lg">
+                            <option value="disabled selected" >Please,
+                                select the crime
+                            </option>
+                            <option value="message">Rob a bank</option>
+                            <option value="proposal">Fake money</option>
+                            <option value="abuse">Overtake the government</option>
+                            <option value="feedback">Rob a museum</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-12 bg-check">
+                        <input name="response" type="checkbox" id="response"
+                               class="form-check-input" name="response">
+                        <label for="response" class="form-check-label"
+                               id="check_label">Receive reply via e-mai</label>
+                    </div>
+                    <div class="form-group bg-txtarea  col-12">
+                        <textarea name="comment" class="form-control-lg"
+                                  id="comment" cols="50" rows="6"
+                                  maxlength="300" wrap="hard"
+                                  placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group col-12">
+                        <button type="submit"
+                                id="submit"
+                                class="btn btn-primary float-left">Send
+                        </button>
+                        <button type="reset"
+                                class="btn btn-primary float-right"
+                                >Clear
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+{% endblock container %}

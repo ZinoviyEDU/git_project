@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Stainless Steel Rat Achievements
+{% endblock title %}
+
+{% block header %}
+Stainless Steel Rat Achievements
+{% endblock header %}
+
+{% block keywords %}
+"Stainless, steel, rat, achievements, books, all"
+{% endblock keywords %}
+
+{% block description %}
+"Stainless Steel Rat chronology"
+{% endblock description %}
+
+{% block container %}
+<div class="col-7">
+            <table class="table table-striped table-hover">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col" colspan="4">All books about Stainless
+                        Steel Rat
+                    </th>
+                </tr>
+                <tr class="text-center">
+                    <td scope="col">№</td>
+                    <td scope="col">Book name</td>
+                    <td scope="col">Publishing date</td>
+                    <td scope="col">Chronology order</td>
+                </tr>
+                </thead>
+                <tbody>
+                {% for item in data %}
+                {% if data|length > loop.index %}
+                <tr class="text-center">
+                    <th scope="row">{{loop.index}}</th>
+                    <td>{{ item[0] }}</td>
+                    <td>{{ item[1] }}</td>
+                    <td>{{ item[2] }}</td>
+                </tr>
+                {% elif data|length == loop.index %}
+                <tr class="text-center row-last">
+                    <th scope="row">{{loop.index}}</th>
+                    <td>{{ item[0] }}</td>
+                    <td>{{ item[1] }}</td>
+                    <td>{{ item[2] }}</td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+{% endblock container %}
