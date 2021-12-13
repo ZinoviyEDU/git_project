@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block container %}
+<form style="position: absolute; left: 480px; top:150px;">
+      <div>
+          <p style="height: 3px">Фамилия:</p>
+          <input type="text">
+      </div>
+      <div>
+          <p style="height: 3px">Имя:</p>
+          <input type="text">
+      </div>
+      <div>
+          <p style="height: 3px"> Email:</p>
+          <input type="text">
+      </div>
+      <div id="theme">
+          <p style="height: 3px">Тема сообщения:</p>
+          <select>
+              <option> {{ option[0]}} </option>
+              <option> {{ option[1] }} </option>
+              <option> {{ option[2] }} </option>
+              <option> {{ option[3] }} </option>
+          </select>
+      </div>
+      <div>
+          <p style="height: 3px">Сообщение:</p>
+          <textarea name="comment" cols="40" rows="3"></textarea>
+
+      </div>
+      <div style="position:relative; top: 10px">
+          <div>
+              <input type="checkbox">
+              Получить ответ
+          </div>
+      </div>
+      <div style="position:relative; top: 20px">
+          <input type="submit" value="Отправить сообщение">
+          <input type="reset" value="Очистить форму">
+      </div>
+
+</form>
+
+{% endblock container %}

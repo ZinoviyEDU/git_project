@@ -1,8 +1,6 @@
-# About project...
+To start the project:
 
-Some information about project...
-
-```
-# Example source code
-print("Hello, world!")
-```
+open app.py
+pip install (from requirements)
+flake8 app.py
+flask run

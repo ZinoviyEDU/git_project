@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="width:1000px; margin:0 auto; background-color:#D4E6B3;">
+    <h1 style="font-size: 28px; color: {{ color|random }}; text-align: center;">{{ name }}</h1>
+    {% include "menu.html" %}
+
+    {% block container %}
+
+    {% endblock container %}
+
+    {% include "footer.html" %}
+</body>
+</html>
