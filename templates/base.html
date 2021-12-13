@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>{% block head %}
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Keyword"/>
+    <meta name=”Robots” content= nofollow/>
+    <meta name=”Author” content="Александр Гура"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bs.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}{% endblock %}{{title}}</title>
+    {% endblock %}
+</head>
+<body>
+<nav>
+    {% if navi[0]==" " %}
+    <a >{{navi[3]}}</a> | <a href={{navi[1]}}>{{navi[4]}}</a> | <a href={{navi[2]}}>{{navi[5]}}</a>
+    {% elif navi[1]==" " %}
+    <a href={{navi[0]}}>{{navi[3]}}</a> | <a >{{navi[4]}}</a> | <a href={{navi[2]}}>{{navi[5]}}</a>
+    {% elif navi[2]==" " %}
+    <a href={{navi[0]}}>{{navi[3]}}</a> | <a href={{navi[1]}}>{{navi[4]}}</a> | <a >{{navi[5]}}</a>
+    {% endif %}
+</nav>
+    <hr>
+   <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                        <h3>{{description}}</h3>
+                         <div id="content">{% block content %}
+                             {% if navi[0]==" " %}
+                             <table>
+                        <thead>
+                            <tr>
+                                {% for keys in points[0].keys() %}
+                                  <th>{{ keys }}</th>
+                                {% endfor %}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for point in points %}
+                                <tr>
+                                {% for key,value in point.items() %}
+                                    <td>{{ value }}</td>
+                                {% endfor %}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                             {% elif navi[1]==" " %}
+                                         <img src="{{ url_for('static', filename='jpg/pupkin.jpg') }}"
+                                              alt={{alt}} width="300">
+                                            <div class="shadowbox" >{{txt}}</div>
+                             {% elif navi[2]==" " %}
+                                <form action="/contact" method="post" >
+                                     <p>Фамилия:</p>
+                                     <p><input type="text" name="lastname"  value=""></p>
+                                     <p>Имя:</p>
+                                     <p><input type="text" name="firstname"  value=""></p>
+                                     <p>Email:</p>
+                                     <p><input type="email" name="email"  value=""></p>
+                                     <p>Тема сообщения</p>
+                                     <select>
+                                         <option>Предложение</option>
+                                         <option>Нашли ошибку</option>
+                                         <option>Ваш вариант</option>
+                                     </select>
+                                     <p><label for="msg">Сообщение:</label></p>
+                                     <p><textarea id="msg" name="user_message" cols="50" rows="6"></textarea></p>
+                                     <p><input type="checkbox" > Поулчить ответ по email</p>
+                                     <div class="form-button mt-3">
+                                         <button id="submit"  type=  "submit"
+                                                 class="btn btn-primary">Отправить сообщение</button>>
+                                         <button type="reset" class="btn btn-primary">Очистить форму</button>
+                                     </div>
+                                </form>
+                             {% endif %}
+                             {% endblock %}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>
+{% include "footer.html" %}
+</body>
+</html>
