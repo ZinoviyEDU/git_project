@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block container %}
+
+        <table cellspacing="0" border="1" align="center"
+               style="text-align: center; height: 350px; width: 600px; background: aqua;position:relative;  top: 70px;">
+            {% for line in lst_csv %}
+                <tr>
+                    {% for item in line %}
+                        <td>{{ item }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+{% endblock container %}
