@@ -58,13 +58,14 @@ def contacts():
         text = request.form['text']
         feedback = ['\n\nNew feedback', name, last_name, email, subject, text]
         write_file(feedback)
-        return render_template('contacts.html',  success=True, text=text_structures)
+        return render_template('contacts.html', success=True, text=text_structures)
     else:
         return render_template('contacts.html', text=text_structures)
 
 
 @app.route("/about/")
 def about():
+    # raise Exception("error")  ## for test custom error page '500'
     text_structures = {'title': "about",
                        'heading': "about max",
                        'text': "Passionate children's play actor featured in numerous shows. \
@@ -74,6 +75,7 @@ def about():
                        'text2': "Creative and organized specialist with 5+ years of experience in a deadline-driven,\
                             high-output environment. ",
                        'text3': "Glad to bring joy and miracle to children.",
+                       'heading2': "Special Skills",
                        'new': "Horse riding",
                        'badge': "New"}
     lst_skills = ['Dance (improvisational, modern)', 'Singing (musical, pop)', 'Animal accents']
@@ -91,7 +93,7 @@ def page_not_found(e):
 
 
 @app.errorhandler(500)
-def page_not_found(e):
+def server_error(e):
     text_structures = {'title': "error 500",
                        'heading': "500",
                        'message': "Something went wrong!",

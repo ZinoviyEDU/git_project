@@ -1,3 +1,4 @@
+/* Styles from bootstrap template */
     .row.content {height: 100%}
 
     .sidenav {
@@ -22,6 +23,7 @@
       .row.content {height: auto;}
     }
 
+/* Form styles*/
 input[type=text], input[type=password], input[type=email], #subject, #textarea {
   width: 100%;
   padding: 12px 20px;
@@ -30,4 +32,10 @@ input[type=text], input[type=password], input[type=email], #subject, #textarea {
   border: 1px solid #ccc;
   box-sizing: border-box;
   background-color: #F7F7F7;
+}
+
+/* Image size*/
+img {
+  max-width: 30%;
+  height: auto;
 }

@@ -6,14 +6,15 @@
         <h2> {{ text.heading|title }} </h2>
 
         <img src="{{ url_for('static', filename='images/heihei.png')}}"
-             alt="Photo of Max" class="mx-auto d-block" width="30%" height="auto">
+             alt="Photo of Max" class="mx-auto d-block">
 
         <p>{{ text.text}} </p>
         <p class="bg-secondary text-white"> {{ text.text2}} </p>
         <p> {{ text.text3}} </p>
 
+
+        <mark>{{text.heading2}}</mark>
         <ul>
-            <mark>Special Skills</mark>
             <li>{{text.new|upper}} <span class="badge bg-secondary">{{text.badge}}</span> </li>
             {% for item in lst %}
             <li>{{ item }}</li>

@@ -1,3 +1,2 @@
 FLASK_ENV=
 FLASK_APP=
-flask run
