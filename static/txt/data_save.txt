@@ -1,0 +1,1 @@
+Фамилия = Гура Имя = Александр, email = , Сообщение Flask project HW10 Hillel
