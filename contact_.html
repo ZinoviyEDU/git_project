@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Войти в личный кабинет</title>
-     <link rel="stylesheet" href="css/style_.css">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body background="images/b2.jpeg">
          <div class ="logo">
            <a href="https://www.yakaboo.ua/"><img src="images/logo_4.jpeg" alt="real site &rarr; YAKABOO" width="350"></a>
         </div>
-          <nav class="menu">
+          <nav  class="menu">
             <a href="https://www.yakaboo.ua/">real site &rarr; YAKABOO </a> |
-            <a href="index_.html">Купить книги Python</a> |
-            <a href="about_.html">О Yakaboo</a> |
-            <a href="contact_.html">Контакты</a>
+            <a  href="index_.html">Купить книги Python</a> |
+            <a  href="about_.html">О Yakaboo</a> |
+            <a  href="contact_.html">Контакты</a>
    </nav>
 
     <form  action="/" method="post" >
-        <div>
+        <div class="form-group">
            <h1 id = "tag2">Войти в личный кабинет</h1>
                     <p><input type = "text" name ="user_surname" placeholder = "Фамилия" value =""> <input type = "text" name = "user_name" placeholder = "Имя" value ="" ></p>
                     <p><input type = "email" placeholder = "Email" value =""/></p>
                     <p>Тема сообщения:</p>
-                      <p><select name="choice">
+                      <p><select  name="choice">
                           <option value="s1">Предложение</option>
                           <option value="s2">Реклама</option>
                            <option value="s3">Возврат товара</option>
                            <option value="s4">Расторжение</option>
                       </select></p>
                     <p>Сообщение:<Br>
-                          <textarea name="comment" cols="50" rows="6"></textarea></p>
-                    <p><input type = "checkbox" id = "Получить ответ по email" name = "Получить ответ по email" checked/>
+                          <textarea  name="comment" cols="50" rows="6"></textarea></p>
+                    <p><input type = "checkbox" id = "Получить ответ по email" name = "Получить ответ по email" checked />
                           <label for = "Получить ответ по email">Получить ответ по email</label></p>
-                    <p><input type="submit" value="Отправить сообщение">
-                          <input type="reset" value="Очистить форму"></p>
+                    <p><input type="submit" value="Отправить сообщение" class="btn btn-outline-success my-2 my-sm-0">
+                          <input type="reset" value="Очистить форму"class="btn btn-primary"></p>
         </div>
     </form>
   <h1>Контакты</h1>
