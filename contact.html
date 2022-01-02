@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Contact Vasya Pupkin">
+    <meta name="keywords" content="Фамилия, имя, email, сообщение">
+    <title>Связаться с Васей Пупкиным</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="p-lg-1 mb-lg-0 bg-success text-dark">
+    <menu class="text-center"><a href="index.html">Главная - Успехи Киберзаучки</a> | <a href="about.html">Инф. об Киберзаучке</a> | <a href="contact.html">Связь с Киберзаучкой</a></menu>
+    <h1>Связаться с Киберзаучкой</h1>
+    <form method="post">
+        <p>Фамилия:</p>
+        <p><input type="text" name="user_surname" placeholder="Фамилия" value=""></p>
+
+        <p>Имя:</p>
+        <p><input type="text" name="user_name" placeholder="Имя" value=""></p>
+
+        <p>E-mail:</p>
+        <p><input type="text" name="email" placeholder="Email" value=""></p>
+
+        <p>Вид сообщения:</p>
+        <select name="topic_message">
+            <option value="1">Вопрос</option>
+            <option value="2">Совет</option>
+            <option value="3">Кляуза</option>
+          </select>
+
+        <p>Сообщение:</p>
+        <textarea name="message" cols="50" rows="6"></textarea>
+
+        <p><input type="checkbox">Получить ответ по email</p>
+
+        <p><input type="submit" value="Отправить сообщение"> <input type="submit" value="Очистить форму"></p>
+
+    </form>
+    <hr>
+<footer class="text-center">Киберзаучка ©2020-2021</footer>
+</body>
+</html>
