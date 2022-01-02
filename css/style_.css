@@ -1,0 +1,39 @@
+body {
+      font-family:serif; /* Семейство шрифтов */
+      font-size: 11pt; /* Размер основного шрифта в пунктах  */
+      text-align:justify;
+      background-color:MintCream; /* Цвет фона веб-страницы */
+      color: #333; /* Цвет основного текста */
+     }
+
+footer{
+      text-align: center;
+      color: DimGray;
+      }
+.menu{
+      text-align:center;
+      font-weight:bold;
+      font-size: 16pt;
+     }
+.logo {
+       text-align:light;
+      }
+table {
+      border-collapse: collapse;
+     }
+thead {
+  font-weight: bold;
+  font-size: 13px;
+  color: #039;
+  text-transform: uppercase;
+  text-align:center;
+      }
+td{
+  color: #669;
+  border-top: 1px dashed white;
+  padding: 10px;
+  background:#ccddff;
+   }
+tr:hover td {
+  background: #99bcff;
+}
