@@ -14,7 +14,7 @@ instance/
 .webassets-cache
 
 # Environments
-venv/
+../../venv/
 
 # pyenv
 .python-version
