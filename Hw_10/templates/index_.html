@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Книги/Python</title>
+{% extends "base.html" %}
 
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
-<body>
-     <div class ="logo">
-           <a href="https://www.yakaboo.ua/"><img src="images/logo_4.jpeg" alt="real site &rarr; YAKABOO" width="350"></a>
-     </div>
-      <nav class="menu">
-            <a href="https://www.yakaboo.ua/">real site &rarr; YAKABOO </a> |
-            <a href="index_.html">Купить книги Python</a> |
-            <a href="about_.html">О Yakaboo</a> |
-            <a href="contact_.html">Контакты</a>
-      </nav>
+{% block container %}
       <hr>
-    <h1 id ="tag3"> Книги / Python</h1>
+    <h1 id ="tag3">{{ title.text }} </h1>
            <p> </p>
            <table class="table table-success table-striped" border = "1">
         <thead>
@@ -202,13 +187,4 @@
             </tr>
         </tbody>
      </table>
-
- <p> <a href="index_.html#tag3"><img src="images/up.png" alt="scroll to the first title" width="35" align="right"></a></p>
-  <p> <a href="https://www.yakaboo.ua/"><img src="images/logo_2.png" alt="real site &rarr; YAKABOO" width="25" align="right" ></a></p>
-
-
-   <footer>
-           <p>&copy; Yakaboo 2004-2021. Все права защищены</p>
-   </footer>
-</body>
-</html>
+{% endblock container %}
